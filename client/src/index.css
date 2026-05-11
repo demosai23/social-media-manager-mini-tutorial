@@ -1,0 +1,52 @@
+/* Google Font — MUST be first */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1877F2;
+  border-radius: 10px;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(90deg, #1877F2, #E1306C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gradient button */
+.gradient-btn {
+  background: linear-gradient(90deg, #1877F2, #E1306C);
+  transition: opacity 0.3s ease;
+}
+.gradient-btn:hover {
+  opacity: 0.85;
+}
